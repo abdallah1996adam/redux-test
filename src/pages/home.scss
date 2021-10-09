@@ -1,0 +1,50 @@
+.root {
+  height: 100%;
+  overflow-y: scroll;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    width: 95%;
+  }
+  label,
+  h2 {
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    .addbox {
+      width: 100%;
+      align-self: flex-start;
+      transform: translateY(130px);
+    }
+  }
+
+  .generator {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    .numbers {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0.5rem;
+    }
+    .btn {
+      margin: 0.5rem;
+      width: 20%;
+    }
+    .reset {
+      margin: 0.5rem;
+      width: 15%;
+    }
+  }
+}
